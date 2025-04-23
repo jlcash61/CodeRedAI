@@ -1,0 +1,14 @@
+{
+  "type": "function",
+  "function": {
+    "name": "format_device_table",
+    "description": "Formats OCR-extracted device table text into a structured, numbered list of fire alarm devices.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "raw_text": { "type": "string" }
+      },
+      "required": ["raw_text"]
+    }
+  }
+}
