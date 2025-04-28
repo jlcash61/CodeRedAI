@@ -1,1 +1,1 @@
-CodeRed AI is a fire alarm assistant for field techs, installers, programmers, and inspectors. It extracts device data from tables and drawings, formats it for panel entry, and answers NFPA 72 code questions to speed up work on-site or during inspections.
+CodeRed AI (Red) is a fire alarm assistant for field techs, installers, programmers, and inspectors. It extracts device data from tables and drawings, formats it for panel entry, and answers NFPA 72 code questions to speed up work on-site or during inspections.
