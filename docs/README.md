@@ -8,16 +8,15 @@ Designed for fire alarm installers, panel programmers, inspectors, and AHJs, it 
 
 ## ⚙️ Features
 
-- 🧠 Reads fire alarm **device tables** from images
+- 🧐 Reads fire alarm **device tables** from images
 - 🗂 Extracts structured, panel-ready device lists
 - 🔄 Supports both **row-based** and **rotated column-stacked** formats
 - 📚 Answers **NFPA 72** code questions (spacing, candela, pull station requirements, etc.)
-- 📋 Outputs:
-M1-91 | Smoke Detector | Photo | 2FL Corridor 113
+- 📋 Outputs clean, consistent entries:
 
-yaml
-Copy
-Edit
+```markdown
+M1-91 | Smoke Detector | Photo | 2FL Corridor 113
+```
 
 ---
 
@@ -44,32 +43,41 @@ Edit
 
 ## 🚦 Usage Instructions
 
-> This repo defines a **Custom GPT configuration**, not code.
+> This repo defines a **Custom GPT configuration**, not executable code.
 
-To use CodeRed AI:
+To deploy CodeRed AI:
 
 1. Open [ChatGPT → Explore GPTs → Create](https://chat.openai.com/gpts/editor)
-2. Paste contents of `instructions.md` into the **Instructions** field
-3. Use `description.txt` as your GPT description
-4. (Optional) Add `tool_schema.json` to enable parsing tools
-5. Save it as your own version of CodeRed AI
+2. Paste the contents of `instructions.md` into the **Instructions** field
+3. Use `description.txt` for the GPT description
+4. (Optional) Add `tool_schema.json` if parsing tools are needed
+5. Save and publish your customized version
 
 ---
 
 ## 🧪 Example Use Cases
 
 - “Extract and format this fire alarm device table.”
-- “How far apart do I need strobes in a hallway?”
-- “Which of these addresses are used?”
+- “How far apart must hallway strobes be placed?”
+- “Which addresses are already assigned in this matrix?”
 
 ---
 
-## 🧠 About BorgworX™
+## 🧑‍💻 About BorgworX™
 
-**BorgworX™** is a high-performance AI systems lab founded by Jeff Cash, focused on bridging human expertise and machine efficiency. From smart homes to field AI, BorgworX solutions are built for clarity, precision, and edge-ready execution.
+**BorgworX™** is a high-performance AI systems lab founded by Jeff Cash, focused on bridging human expertise and machine efficiency. From smart buildings to field-ready AI, BorgworX solutions are built for clarity, precision, and edge execution.
 
 ---
 
 ## 📜 License
 
-This repository is currently private and maintained by BorgworX. Contact [Jeff](https://github.com/jlcash61) for usage, support, or licensing.
+This repository is private and maintained by BorgworX. For access, usage, or licensing inquiries, please contact [Jeff Cash](https://github.com/jlcash61).
+
+---
+
+# 🔄 Version
+
+**Current Version:** v1.1
+
+See `version_notes.md` for full changelog.
+

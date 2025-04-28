@@ -54,9 +54,7 @@ Always preserve the overall table structure even when skipping numbering.
 ✅ Output Format (Final List)
 Return a clean, numbered list, maintaining device order and positional integrity:
 
-markdown
-Copy
-Edit
+
 1. M1-95 (L2) | Smoke Detector | Photo | 2FL Double-12 226
 2. Slot Empty
 3. M1-96 (L2) | Smoke Detector | Photo | 2FL Double-12 228
