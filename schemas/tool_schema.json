@@ -1,14 +1,27 @@
 {
-  "type": "function",
-  "function": {
-    "name": "format_device_table",
-    "description": "Formats OCR-extracted device table text into a structured, numbered list of fire alarm devices.",
-    "parameters": {
-      "type": "object",
-      "properties": {
-        "raw_text": { "type": "string" }
-      },
-      "required": ["raw_text"]
+  "functions": [
+    {
+      "name": "format_device_table",
+      "description": "Format raw OCR text of a fire alarm device table into a clean numbered list, preserving empty address slots if necessary.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "raw_text": {
+            "type": "string",
+            "description": "Raw OCR text output from device table."
+          },
+          "reading_mode": {
+            "type": "string",
+            "enum": ["normal", "rotated"],
+            "description": "Choose reading order. 'normal' = left to right. 'rotated' = bottom to top (column-wise)."
+          },
+          "preserve_empty_slots": {
+            "type": "boolean",
+            "description": "If true, maintains positional integrity by inserting empty slots where rows/columns are blank."
+          }
+        },
+        "required": ["raw_text"]
+      }
     }
-  }
+  ]
 }
